@@ -1,4 +1,3 @@
-
 lecturer(paul).
 lecturer(viv).
 lecturer(francis).
