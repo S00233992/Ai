@@ -13,13 +13,15 @@ has_car(mick, 5, toyota, 1000).
 has_car(mick, 2, ford, 2000).
 
 % a. what cars exist
-car(Type) :- car(_, Type, _).
+car(Type).
 
 % b. who has car less than 3000
-car_less_than(Who, Amount) :- has_car(Who, _, _, Cost), Cost < Amount.
+car_less_than(Who, 3000).
 
 % c. what cars does joe own
-what_car(Person, Car) :- has_car(Person, _, Car, _).
+what_car(Joe,Car)
+
+
 
 
 % Representation 1 - pegs and holes
