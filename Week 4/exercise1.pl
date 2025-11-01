@@ -25,4 +25,3 @@ adjacent([Row, Col, _], Squares) :-
 ?- adjacent([2,2,x], Squares).
 Squares = [[1,2,e], [2,1,e], [2,3,e], [3,2,e]].
 
-test code

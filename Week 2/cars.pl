@@ -36,10 +36,10 @@ hole(h2, square).
 hole(h3, round).
 
 % pegs fit into holes of same shape
-fits(Peg, Hole) :- peg(Peg, Shape), hole(Hole, Shape).
+fits(Peg, Hole)
 
 % which round pegs fit into round holes
-round_peg_round_hole(Peg, Hole) :- peg(Peg, round), hole(Hole, round).
+round_peg_round_hole(Peg, Hole)
 
 
 % Representation 2 - lifting trunk
@@ -57,9 +57,4 @@ opposite(right, left).
 heavy(trunk).
 
 % who can lift trunk - need 2 people with opposite hands
-can_lift(Object, Person1, Person2) :- 
-    heavy(Object),
-    handed(Person1, Hand1),
-    handed(Person2, Hand2),
-    opposite(Hand1, Hand2),
-    Person1 \= Person2.
+can_lift(Object, Person1, Person2)
